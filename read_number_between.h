@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int  ReadNumberBetween(string msgToUsr){
+int  ReadNumberBetween(string msgToUsr, int from, int to){
 
     int number = 0;
     do
     {
         cout << msgToUsr;
         cin >> number;
-    } while (number < 1 || number >4);
+    } while (number < from || number > to);
     
     return number;
 
