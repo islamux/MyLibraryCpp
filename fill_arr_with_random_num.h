@@ -2,7 +2,7 @@
 using namespace std; 
 #include "random_from_to.h"
 
-void FillArrWithRandomNumFrom1To100( int numberFromArr[100], int& lengthOfArr){
+void FillArrWithRandomNum( int numberFromArr[100], int& lengthOfArr){
 
     // Reading length of array 
     cout << "Ente a number of elements:\n";
