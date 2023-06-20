@@ -1,22 +1,14 @@
 #include <iostream>
 using namespace std;
+#include "read_number.h"
 
-// check number if it s out of range still in loop.
-int ReadNumberInRangeFromTo(int from, int to){
+int ReadNumberInRangeFromTo(int from, int to, string msg){
 
     int numberToCheckFromFuncOr = 0;
 
     do
     {
-
-      // You could using read input directly 
-    //   cout << "Enter a number: \n"; 
-    //   cin >> numberToCheckFromFuncOr;
-
-    // Or You could call ReadNumber() func
-      numberToCheckFromFuncOr = ReadNumber();
-
-      
+      numberToCheckFromFuncOr = ReadNumber(msg);
 
     } while ( numberToCheckFromFuncOr < from || numberToCheckFromFuncOr > to);
     

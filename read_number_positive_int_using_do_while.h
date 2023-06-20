@@ -8,7 +8,7 @@ int ReadNumberPositiveIntUsingDoWhile(string msgToUser){
     {
         cout << msgToUser << "\n";
         cin >> number;
-    }while(number < 1) 
+    }while(number < 1); 
     
     return number;
 }
